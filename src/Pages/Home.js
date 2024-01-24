@@ -6,7 +6,7 @@ function Home() {
     <div>
       <HeaderSection>
         <div>
-          <img src="/education.jpg" className="h-[200px] object-cover sm:h-full" />
+          <img src="/education.jpg" className="h-[200px] w-full object-cover sm:h-full" />
         </div>
         <div className="sm:my-12 my-8">
           <HomePageComp />

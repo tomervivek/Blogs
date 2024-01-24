@@ -28,6 +28,15 @@ export default function HeaderSection(props) {
             </a>
           </div>
           <div className="flex lg:hidden">
+          <div className="text-sm mr-4 font-semibold leading-6 text-gray-900">
+              <span aria-hidden="true" className='flex items-start'>
+      <div className='text-white'>        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+      fill="currentColor" className="w-8 h-8">
+      <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+    </svg></div>
+<div className='bg-red-500 text-white rounded-full px-1 -ml-2 -mb-1 text-xs'>{checked.length}</div>
+</span>
+            </div>
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -45,7 +54,7 @@ export default function HeaderSection(props) {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
+            <div className="text-sm font-semibold leading-6 text-gray-900">
               <span aria-hidden="true" className='flex items-start'>
       <div className='text-white'>        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
       fill="currentColor" className="w-8 h-8">
@@ -53,13 +62,13 @@ export default function HeaderSection(props) {
     </svg></div>
 <div className='bg-red-500 text-white rounded-full px-1 -ml-2 -mb-1 text-xs'>{checked.length}</div>
 </span>
-            </a>
+            </div>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <div className="fixed inset-0 z-50" />
+          <div className="fixed  inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div className="flex items-center justify-between">
+            <div className="flex bg-[#4F6F52] p-2  items-center justify-between">
               <a href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 <img
@@ -68,6 +77,7 @@ export default function HeaderSection(props) {
                   alt=""
                 />
               </a>
+       
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
