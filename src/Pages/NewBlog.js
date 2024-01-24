@@ -150,7 +150,7 @@ fetch("https://s2fwl9bcyl.execute-api.ap-south-1.amazonaws.com/dev/insertblog", 
 
               <div>
                 <label htmlFor="image">
-                  Image *
+                  Image <sapn className="text-red-500">*</sapn>
                 </label>
                 <div className="w-full rounded-lg  border border-gray-400 focus:border-[#4F6F52] outline-none p-3 mt-1  text-sm shadow-sm">
                   <input
