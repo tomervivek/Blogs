@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 const Footer = () => {
   const[email,setEmail]=useState("")
@@ -11,7 +11,7 @@ const Footer = () => {
     <strong className="block text-center text-xl font-bold text-gray-200 sm:text-3xl">
       Want us to email you with the latest blockbuster news?
     </strong>
-    <ToastContainer theme='colored'></ToastContainer>
+    
     <form onSubmit={(e)=>{
 e.preventDefault();
 toast.success("Thanks for subscribe!!")

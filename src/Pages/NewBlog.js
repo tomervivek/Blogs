@@ -1,8 +1,7 @@
 import HeaderSection from "../Components/HeaderSection";
 import { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 
-import 'react-toastify/dist/ReactToastify.css';
 import BreadCrumb from "../Components/BreadCrumb";
 import { ExclamationCircleIcon } from "@heroicons/react/24/outline";
 
@@ -93,7 +92,7 @@ fetch("https://s2fwl9bcyl.execute-api.ap-south-1.amazonaws.com/dev/insertblog", 
 
   return (
     <div>
-      <ToastContainer theme='colored'></ToastContainer>
+   
       <HeaderSection>
         <section className="relative flex flex-wrap lg:h-screen lg:items-start">
           <div className="w-full px-4  sm:px-6 lg:w-1/2 lg:px-8">
