@@ -208,14 +208,14 @@ fetch("https://s2fwl9bcyl.execute-api.ap-south-1.amazonaws.com/dev/insertblog", 
 
           
 
-              <div className="flex items-center justify-between">
+              <div className="flex items-center  justify-between">
                 <div></div>
 
                 {
                     loading?
                     <div
             
-                  className="inline-block rounded-lg bg-white px-5 py-3 text-sm font-medium text-[#4F6F52] border hover:opacity-80 border-[#4F6F52]"
+                  className="inline-block mb-4 lg:mb-0  rounded-lg bg-white px-5 py-3 text-sm font-medium text-[#4F6F52] border hover:opacity-80 border-[#4F6F52]"
                 >
                   Processing...
                 </div>
@@ -223,7 +223,7 @@ fetch("https://s2fwl9bcyl.execute-api.ap-south-1.amazonaws.com/dev/insertblog", 
                     
                     <button
                   type="submit"
-                  className="inline-block rounded-lg bg-white px-5 py-3 text-sm font-medium text-[#4F6F52] border hover:opacity-80 border-[#4F6F52]"
+                  className="inline-block mb-4 lg:mb-0 rounded-lg bg-white px-5 py-3 text-sm font-medium text-[#4F6F52] border hover:opacity-80 border-[#4F6F52]"
                 >
                   Submit
                 </button>}
